@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "randomstuff",
+	"version": "${version}",
+	"name": "Random Stuff",
+	"description": "My first dive into Minecraft modding, so there'll be random shit that comes to my mind",
+	"authors": [
+		"Zhigulevskoe"
+	],
+	"contact": {
+		"homepage": "https://github.com/zhigulevskoe",
+		"sources": "https://github.com/zhigulevskoe/Random-Stuff_1.21"
+	},
+	"license": "MIT",
+	"icon": "assets/randomstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.zhiga.randomstuff.RandomStuff"
+		],
+		"fabric-datagen": [
+			"net.zhiga.randomstuff.RandomStuffDataGenerator"
+		],
+		"client": [
+			"net.zhiga.randomstuff.RandomStuffClient"
+		]
+	},
+	"mixins": [
+		"randomstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "1.21",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
