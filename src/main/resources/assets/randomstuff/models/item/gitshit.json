@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "randomstuff:item/example_item"
+    "layer0": "randomstuff:item/gitshit"
   }
 }
